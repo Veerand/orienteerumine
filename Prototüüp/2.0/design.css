@@ -198,7 +198,6 @@ transition-duration: 0.4s;
 border-radius: 3px;
 vertical-align: top;
 }	
-
 	
 	
 #tab {
@@ -206,4 +205,25 @@ display:inline-block;
 margin-left: 40px;
 }
 
+#form{
+margin: 15px 0px 1px 10%;	
+padding: 8px;
+border-radius: 3px;
+width: 30%;
+}
+
+#form2{
+margin: 0px 0px 1px 10%;	
+padding: 8px;
+border-radius: 3px;
+width: 100%;
+}
+
+#form3{
+margin: 0px 0px 1px 10%;	
+padding: 50px;
+border-radius: 3px;
+width: 100%;
+text-align:left;
+vertical-align:top;
 
