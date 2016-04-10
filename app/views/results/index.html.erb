@@ -1,0 +1,95 @@
+<pre>
+  <%= @rada.inspect %>
+</pre>
+<body>
+<div id="main">
+    <div id="header">
+        <h1>FOTOORIENTEERUMINE</h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <a href="valik.html" class="button main">Vali rada</a>
+            <a href="loomine.html" class="button main">Loo rada</a>
+            <a href="mobiil.html" class="button main">Mobiilirakendus</a>
+            <a href="results" class="button main">Parimad tulemused</a>
+            <a href="juhend.html" class="button main">Tutvu juhendiga</a>
+            <a href="tagasiside.html" class="button main">Tagasiside</a>
+            <a href="s6brad.html" class="button main">Meie sõbrad</a>
+            <a href="avaleht" class="button main">Logi välja</a>
+        </div>
+        <div class="margin"></div>
+        <div class="middle">
+            <h1> Parimad tulemused </h1>
+             <table>
+                <thead>
+					<tr>
+						<th>Raja nimi</th>
+						<th>Orienteeruja</th>
+						<th>Punkte</th>
+						<th>Aeg</th>
+						<th>Aeg</th>
+						
+					</tr>
+				</thead>
+			<% @tulemus.each do |tulemus| %> 
+				<tr>
+					<td><%= tulemus.id %></td> 
+					<td><%= tulemus.kasutaja_id %></td>
+					<td><%= tulemus.rada_id %></td> 
+					<td><%= tulemus.punktid %></td>
+					<td><%= tulemus.aeg %></td>
+				</tr>
+			<% end %>       
+			</table>  
+        </div>
+        <div class="margin"></div>
+        <div class="right">
+            <a class="label">Viimased teated</a>
+            <div class="scroll">
+                <ul class="scroll-list">
+                    <li class="scroll-list-item">
+                        <div class="message"><strong>Admin</strong>: Uus rada Tartu kesklinnas. Kõik mängima!</div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message">Pets: Parim site ever!!! #fotoorient</div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message"><strong>Admin</strong>: Muudatus reeglites! Lisaküsimustele vastamine nüüd senisest
+                            veelgi kaalukam.
+                        </div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message">Siilike: Kas auhindu ka jagatakse?</div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message">Meie Kostja: Maša Ja tebja ljubju</div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message"><strong>Admin</strong> Nüüd on kõigil kasutajatel võimalus ka ise radasid luua</div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message">TartuVaim: Meile meeldis, ootame uusi radasid :)</div>
+                        <br/>
+                    </li>
+                    <li class="scroll-list-item">
+                        <div class="message">Aivar: Esssaa!!!</div>
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h2 id = footer_h2> e-mail: fotoorienteerumine@gmail.com<span class="tab">skype:fotoorienteerumine</span> <span class="tab">twitter: @fotoo </span>
+        </h2>
+        </h5>
+    </div>
+</div>
+</body>
+</html>

@@ -3,14 +3,15 @@ Rails.application.routes.draw do
 
   get 'pealeht/create'
 
+  get 'results/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-  
-  get 'pealeht' => 'pealeht#new'
-  get 'avaleht' => 'welcome#index'
+  get 'tulemused' => 'results#index'
+  get 'pealeht' => 'pealeht/index'
+  get 'avaleht' => 'welcome/index'
   get '/proto', :to => redirect('/avaleht.html')
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
